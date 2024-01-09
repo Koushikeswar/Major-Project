@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icon.ico">
+    <title>Return Management</title>
+
+    <link rel="stylesheet" href="Return_page.css">
+</head>
+<body>
+    <div class="Header" >
+        <a href="https://www.skf.com/in" class="imga">
+            <img src="skf-logo-white.svg" class="logo">
+        </a>
+        <h1 class="h11">
+            Return Management
+        </h1>
+    </div>
+    <div class="container">
+        <!-- <h1>Return Management</h1> -->
+
+        <form action="Servlet" method="post" id="returnForm" style="padding: 40px">
+
+            <label for="productID"><b>Product ID :</b></label>
+            <input name="productID" id="productID" placeholder="6003-Z1" required></input>
+            <label for="returnReason"><b>Return Reason:</b></label>
+            <select name="returnReason" id="returnReason" required>
+                <option value=""><b>Select Reason</b></option>
+                <option value="excess_supply">Excess Supply</option>
+                <option value="wrong_delivery">Wrong Delivery</option>
+                <option value="damaged_product">Damaged Product</option>
+                <option value="customer_dissatisfaction">Customer Dissatisfaction</option>
+                <option value="other">Other (Please Specify)</option>
+            </select>
+
+            <label for="returndetails"><b>Return Details:</b></label>
+            <textarea name="returndetails" id="returndetails" rows="5" placeholder="Please provide details about the return, including product information, order number, and reason for return." required></textarea>
+
+            <label for="productCondition"><b>Product Condition:</b></label>
+            <select name="productCondition" id="productCondition" required>
+                <option value="">Select Condition</option>
+                <option value="new">New</option>
+                <option value="slightly_used">Slightly Used</option>
+                <option value="moderately_damaged">Moderately Damaged</option>
+                <option value="heavily_damaged">Heavily Damaged</option>
+                <option value="unusable">Unusable</option>
+            </select>
+
+            <!-- <label for="returnAction">Return Action:</label>
+            <select name="returnAction" id="returnAction" required>
+                <option value="">Select Action</option>
+                <option value="repair">Repair Product</option>
+                <option value="repackage">Repackage Product</option>
+                <option value="scrap">Scrap Product</option>
+            </select> -->
+
+            <input type="submit" value="Submit Return Request">
+        </form>
+
+        <div id="returnConfirmation" class="hidden">
+            <p>Your return request has been submitted successfully. We will review your request and take the appropriate action.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 320px;
+            width: 20%;
+            border-style: solid;
+            border-color: #0f58d6;
+        }
+
+        #logo {
+            margin-bottom: 20px;
+        }
+
+        #login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #login-btn {
+            background-color: #0f58d6;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #login-btn:hover {
+            background-color: #0f58d6;
+        }
+    </style>
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="https://www.skf.com/in" class="w3-bar-item w3-button"><img src="SKF_Logo.png" alt="SKF Logo" width="120"> </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      
+      <a href="UserLogin.html" class="w3-bar-item w3-button">UserLogin</a>
+      <a href="EmployeeLogin.html" class="w3-bar-item w3-button">EmployeeLogin</a>
+    </div>
+  </div>
+</div>
+    <div id="login-container">
+        <div id="logo">
+            <img src="SKF_Logo.png" alt="SKF Logo" width="120">
+        </div>
+        <form id="login-form" action="UserServlet" method="post">
+            <label for="username">UserID:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>

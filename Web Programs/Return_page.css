@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+}
+
+.Header
+{
+    background-color: #0f58d6;
+    display: flex;
+    align-items: center;
+    width: 1280px; 
+    height: 64.33px;
+  }
+  /* .imga
+  {
+    font-size: var(--bs-navbar-brand-font-size);
+    color: rgba(152, 31, 31, 0.9);
+    text-decoration: none;
+    white-space: nowrap;
+  } */
+
+  .logo
+  {
+    position: relative;
+    left: 50%;
+    display: block;
+    width: 100px;
+    height: 63.0833px;
+    margin :auto;
+  }
+  .Header h1
+  {
+    position: absolute;
+    left: 38%;
+    align-items: center;
+    color: white;
+  }
+.container {
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#returnConfirmation {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
